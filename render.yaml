@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: loe-graph-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
